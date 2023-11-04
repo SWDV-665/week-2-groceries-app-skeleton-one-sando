@@ -1,0 +1,58 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Grocery
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Grocery</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list>
+    <ion-reorder-group [disabled]="false" (ionItemReorder)="handleReorder($any($event))">
+      <ion-item>
+        <ion-avatar slot="start">
+          <img alt="pizza" src="assets/icon/pizza-slice-solid.svg" />
+        </ion-avatar>
+        <ion-label> Pizza </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+  
+      <ion-item>
+        <ion-avatar slot="start">
+          <img alt="lemon" src="assets/icon/lemon-regular.svg" />
+        </ion-avatar>
+        <ion-label> Lemon </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+  
+      <ion-item>
+        <ion-avatar slot="start">
+          <img alt="ice cream" src="assets/icon/ice-cream-solid.svg" />
+        </ion-avatar>
+        <ion-label> Ice Cream </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+  
+      <ion-item>
+        <ion-avatar slot="start">
+          <img alt="cookie" src="assets/icon/cookie-solid.svg" />
+        </ion-avatar>
+        <ion-label> Cookie </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+  
+      <ion-item>
+        <ion-avatar slot="start">
+          <img alt="burger" src="assets/icon/burger-solid.svg" />
+        </ion-avatar>
+        <ion-label> Burger </ion-label>
+        <ion-reorder slot="end"></ion-reorder>
+      </ion-item>
+    </ion-reorder-group>
+  </ion-list>
+</ion-content>
